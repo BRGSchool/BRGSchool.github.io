@@ -102,7 +102,7 @@ ol.myOL{
   text-align: center;
 }
 
-a.externalLink1{
+div a.externalLink1{
 	
   display: inline-block;
   padding: 0px;
@@ -114,7 +114,7 @@ a.externalLink1{
   
 }
 
-a.externalLink2{
+div a.externalLink2{
 	
   display: inline-block;
   padding: 0px;
