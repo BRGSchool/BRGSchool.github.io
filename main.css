@@ -112,7 +112,7 @@ div a.externalLink1{
 div a.externalLink2{
   position: relative;
   left: 790px;
-  bottom: -30px;
+  bottom: 0px;
   color: forestgreen;
   
 }
