@@ -9,6 +9,12 @@ img {
 body {
     background-color: #cccccc;
 }
+
+h1 {
+    
+    text-align: centered;
+    
+}
    
 .title{
   text-align: center;
