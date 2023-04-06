@@ -12,21 +12,32 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 		
-		
 		<link rel="icon" href="DSCN0417.JPG" type="x-icon" />
 		<link rel="stylesheet" href="main.css" type="text/css" />
 		<link id='csslink' rel="stylesheet" href="main.css" />
+		
 		
 		
 	</head>
 	<body>
 		<style>
 			
-			.carousel-item	{
+			.carousel-item{
 			height:50rem;
-			position: relative;
 			}
-		
+			.carousel-indicators{
+			bottom: 500px;
+			}
+			.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+			display:block;
+			bottom:-100px;
+			}
+			.carousel-in
+			body{
+			background-color: lightgrey;
+			
+			
+			
 		</style>
 		
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -98,64 +109,66 @@
 							<td>Thyme</td>
 							<td>Trumpet vine</td>
 						</tr>
-						</tbody>
-					</table>
-				</div>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<h2 style="text-align: center;">Check out these plants:</h2>
+		
+		<div id="plantCarousel" class="carousel slide">
+			
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#plantCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#plantCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#plantCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#plantCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				<button type="button" data-bs-target="#plantCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
 			</div>
 			
-			<h2 style="text-align: center;">Check out these plants:</h2>
-			
-			<div id="plantCarousel" class="carousel slide">
-				
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#plantCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#plantCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#plantCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					<button type="button" data-bs-target="#plantCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-					<button type="button" data-bs-target="#plantCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-				</div>
-				
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="./LithopsSp.webp" class="d-block w-100" alt="lithops">
-						<div class="carousel-caption d-none d-md-block">
-							<h3>Lithops Sp.</h3>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="./PinkGymno.webp" class="d-block w-100" alt="gymnocalycium">
-						<div class="carousel-caption d-none d-md-block">
-							<h3>Gymnocalycium Mihanovichii (pink)</h3>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="./haworthia_ice_city.webp" class="d-block w-100" alt="haworthia">
-						<div class="carousel-caption d-none d-md-block">
-							<h3>Haworthia 'Ice City'</h3>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="./haworthia_tsukikage.webp" class="d-block w-100" alt="haworthia">
-						<div class="carousel-caption d-none d-md-block">
-							<h3>Haworthia 'Tsukikage'</h3>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="./gymnocalycium_mihanovichii_red.webp" class="d-block w-100" alt="gymocalycium">
-						<div class="carousel-caption d-none d-md-block">
-							<h3>Gymnocalycium Mihanovichii (red)</h3>
-						</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./LithopsSp.webp" class="d-block w-100" alt="lithops">
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Lithops Sp.</h3>
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#plantCarousel" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#plantCarousel" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
+				<div class="carousel-item">
+					<img src="./PinkGymno.webp" class="d-block w-100" alt="gymnocalycium">
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Gymnocalycium Mihanovichii (pink)</h3>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="./haworthia_ice_city.webp" class="d-block w-100" alt="haworthia">
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Haworthia 'Ice City'</h3>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="./haworthia_tsukikage.webp" class="d-block w-100" alt="haworthia">
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Haworthia 'Tsukikage'</h3>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="./gymnocalycium_mihanovichii_red.webp" class="d-block w-100" alt="gymocalycium">
+					<div class="carousel-caption d-none d-md-block">
+						<h3>Gymnocalycium Mihanovichii (red)</h3>
+					</div>
+				</div>
 			</div>
-
-		</body>
-	</html>
+			<button class="carousel-control-prev" type="button" data-bs-target="#plantCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#plantCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		
+		
+		
+	</body>
+</html>
