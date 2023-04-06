@@ -1,114 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="authors" content="Aaron Brown, Katrina Young, Brooke Gregory" />
-    <meta
-      name="description"
-      content="This page contains an index of all my plants"
-    />
-    <title>Aaron's Plant Collection</title>
-    <link rel="icon" href="DSCN0417.JPG" type="x-icon" />
-    <link rel="stylesheet" href="main.css" type="text/css" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="authors" content="Aaron Brown, Katrina Young, Brooke Gregory" />
+		<meta
+		name="description"
+		content="This page contains an index of all my plants"
+		/>
+		<title>Aaron's Plant Collection</title>
+		<link rel="icon" href="DSCN0417.JPG" type="x-icon" />
+		<link rel="stylesheet" href="main.css" type="text/css" />
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		
+		<!-- This is the link to the main stylesheet. -->	 
+		<link id='csslink' rel="stylesheet" href="main.css" />
+		
+		<!-- Next is the JavaScript code that makes the "Switch Style" button work. -->
+		<script>
+			function toggleCSS() {
+				// Obtains the <link> element that links to the css (by using its id).
+				var currentCSS = document.getElementById('csslink');
+				
+				// Change the value of href attribute to change the css file.
+				if (currentCSS.getAttribute('href') == 'main.css') {
+					currentCSS.setAttribute('href', 'alternate.css');
+					} else {
+					currentCSS.setAttribute('href', 'main.css');
+				}
+			}
+		</script>
+		
+	</head>
 	
-	<!-- This is the link to the main stylesheet. -->	 
-	<link id='csslink' rel="stylesheet" href="main.css" />
-
-	<!-- Next is the JavaScript code that makes the "Switch Style" button work. -->
-	<script>
-	    function toggleCSS() {
-          // Obtains the <link> element that links to the css (by using its id).
-          var currentCSS = document.getElementById('csslink');
-
-          // Change the value of href attribute to change the css file.
-          if (currentCSS.getAttribute('href') == 'main.css') {
-            currentCSS.setAttribute('href', 'alternate.css');
-          } else {
-            currentCSS.setAttribute('href', 'main.css');
-          }
-      }
-	</script>
-  
-  </head>
-
-  <body>
-    <h1>Welcome to my plant collection!</h1>
-    <p class="intro">Here you can find a collection of my plants:</p>
-    <div>
-      <ul id="navbar">
-        <li><a class="active" href="index.html"></a>Home</li>
-        <li><a href="GymnocalyciumMihanovichii.html">Gymnocalycium Mihanovichii</a></li>
-      </ul>
-</div>
-    <hr />
-
-    <!--first row -->
-    <div class="row">
-      <!---left column-->
-      <div class="column">
-        <img src="arcticice.jpg" alt="arcticice"/>
-
-        <h2>
-          <p class="plantname">Echeveria 'Arctic Ice'</p>
-        </h2>
-
-        <p class="plantdesc">This plant is a patented Echeveria hybrid that produces a thick layer of white wax over its leaves, giving the appearance of frost.</p>
-      </div>
-
-      <!---right column-->
-      <div class="column">
-        <img src="gymnocalycium_mihanovichii_red.webp" alt="gymnocalycium" />
-
-        <h2>
-          <p class="plantname">Gymnocalycium Mihanovichii</p>
-        </h2>
-
-        <p class="plantdesc">Gymnocalycium Mihanovichii has countless varieties that hybridize readily.
-          <a href="GymnocalyciumMihanovichii.html">Click here for more information about this species.</a>
-        </p>
-        
-      </div>
-    </div>
-
-    <br />
-    <!--second row -->
-    <div class="row">
-      <!---left column-->
-      <div class="column">
-        <img src="haworthia_ice_city.webp" alt="haworthia ice city" />
-
-        <h2>
-          <p class="plantname">Haworthia 'Ice City'</p>
-        </h2>
-
-        <p class="plantdesc">This plant is a mutated Haworthia that grows translucent blue-green leaves that resemble ice crystals.</p>
-      </div>
-
-      <!---right column-->
-      <div class="column">
-        <img src="haworthia_tsukikage.webp" alt="haworthia tsukiage"/>
-
-        <h2>
-          <p class="plantname">Haworthia 'Tsukikage'</p>
-        </h2>
-
-        <p class="plantdesc">This plant is a hybrid of Haworthia Comptoniana and Haworthia Correcta and is renowned for its shiny, flat, translucent leaves.</p>
-	
-      </div>
-      <div class="column">
-        <img src="LithopsSp.webp" alt="lithopssp" />
-
-        <h2>
-          <p class="plantname">'Lithops Sp.'</p>
-        </h2>
-
-        <p class="plantdesc">Lithops are stone-like plants that can last many months without any water.</p>
-      </div>
-    </div>
-	
-	<button onclick="toggleCSS()">Switch Style</button>
-	
-  </body>
-  <footer class="footer"><br/>&copy;Copyright 2023</footer>
+	<body>
+		
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav" id="navbar">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="GymnocalyciumMihanovichii.html">Gymnocalycium Mihanovichii</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							More Plants!
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="bootstrap plants.html">Bootstrap plants</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<br/>
+		
+		<h1>Welcome to my Plant Collection!</h1>
+		<p class="intro">Here you can find a collection of my plants:</p>
+		
+		
+		<hr />
+		
+		<!--first row -->
+		<div class="row">
+			<!---left column-->
+			<div class="column">
+				<img src="arcticice.jpg" alt="arcticice"/>
+				
+				<h2>
+					<p class="plantname">Echeveria 'Arctic Ice'</p>
+				</h2>
+				
+				<p class="plantdesc">This plant is a patented Echeveria hybrid that produces a thick layer of white wax over its leaves, giving the appearance of frost.</p>
+			</div>
+			
+			<!---right column-->
+			<div class="column">
+				<img src="gymnocalycium_mihanovichii_red.webp" alt="gymnocalycium" />
+				
+				<h2>
+					<p class="plantname">Gymnocalycium Mihanovichii</p>
+				</h2>
+				
+				<p class="plantdesc">Gymnocalycium Mihanovichii has countless varieties that hybridize readily.
+					<a href="GymnocalyciumMihanovichii.html">Click here for more information about this species.</a>
+				</p>
+				
+			</div>
+		</div>
+		
+		<br />
+		<!--second row -->
+		<div class="row">
+			<!---left column-->
+			<div class="column">
+				<img src="haworthia_ice_city.webp" alt="haworthia ice city" />
+				
+				<h2>
+					<p class="plantname">Haworthia 'Ice City'</p>
+				</h2>
+				
+				<p class="plantdesc">This plant is a mutated Haworthia that grows translucent blue-green leaves that resemble ice crystals.</p>
+			</div>
+			
+			<!---right column-->
+			<div class="column">
+				<img src="haworthia_tsukikage.webp" alt="haworthia tsukiage"/>
+				
+				<h2>
+					<p class="plantname">Haworthia 'Tsukikage'</p>
+				</h2>
+				
+				<p class="plantdesc">This plant is a hybrid of Haworthia Comptoniana and Haworthia Correcta and is renowned for its shiny, flat, translucent leaves.</p>
+				
+			</div>
+			<div class="column">
+				<img src="LithopsSp.webp" alt="lithopssp" />
+				
+				<h2>
+					<p class="plantname">'Lithops Sp.'</p>
+				</h2>
+				
+				<p class="plantdesc">Lithops are stone-like plants that can last many months without any water.</p>
+			</div>
+		</div>
+		
+		<button onclick="toggleCSS()">Switch Style</button>
+		
+	</body>
+	<footer class="footer"><br/>&copy;Copyright 2023</footer>
 </html>
 
